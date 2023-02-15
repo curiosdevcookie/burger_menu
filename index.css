@@ -43,12 +43,11 @@ menu {
 
 menu.active{
   display: block;
-  /* width: -moz-fit-content;
-  width: fit-content; */
   width: calc(100vh*0.25);
 }
 
 menu li{
+  list-style: none;
   padding: 0.4rem;
   border-bottom: 1px solid #6c6c6c;
 }
