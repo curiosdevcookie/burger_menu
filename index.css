@@ -12,7 +12,7 @@
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #333;
+  background-color: #6c6c6c;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -34,4 +34,21 @@
 
 .burger-menu.active .line-3 {
   transform: translateY(-0.5rem) rotate(-50deg);
+}
+
+
+menu {
+  display: none;
+}
+
+menu.active{
+  display: block;
+  /* width: -moz-fit-content;
+  width: fit-content; */
+  width: calc(100vh*0.25);
+}
+
+menu li{
+  padding: 0.4rem;
+  border-bottom: 1px solid #6c6c6c;
 }
