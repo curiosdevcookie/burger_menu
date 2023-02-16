@@ -13,14 +13,22 @@ class burgerMenu extends HTMLElement {
         flex-direction: column;
         justify-content: center;
         gap: 0.25rem;
-        height: 25px;
-        width: 25px;
+        height: 1.3rem;
+        width: 1.3rem;
         cursor: pointer;
+      }
+
+     .burger-menu > .line{
+        background-color: #6c6c6c;
+      }
+
+      .burger-menu:hover > .line{
+        background-color: #215878;
       }
 
       .line {
         display: block;
-        height: 3px;
+        height: 0.2rem;
         width: 100%;
         background-color: #6c6c6c;
         border-radius: 0.1rem;
@@ -64,6 +72,7 @@ class burgerMenu extends HTMLElement {
 `
     this.onclick = function () {
       shadowRoot.querySelector('.burger-menu').classList.toggle('active');
+      document.getElementById('dropdown').classList.toggle('active');
     }
   }
 }
