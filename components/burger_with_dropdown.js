@@ -21,6 +21,7 @@ class burgerWithDropdown extends HTMLElement {
         height: 3px;
         width: 100%;
         background-color: #6c6c6c;
+        border-radius: 0.1rem;
         transition: transform 0.3s ease-in-out;
       }
 
@@ -61,13 +62,19 @@ class burgerWithDropdown extends HTMLElement {
         padding: 0.4rem;
         border-bottom: 1px solid #6c6c6c;
       }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
     </style>
 
-    <div class="burger-menu">
+    <button class="burger-menu">
       <span class="line line-1"></span>
       <span class="line line-2"></span>
       <span class="line line-3"></span>
-    </div>
+    </button>
     <menu>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>

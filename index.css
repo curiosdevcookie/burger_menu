@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.25rem;
-  height: 25px;
-  width: 25px;
-  cursor: pointer;
+  gap: 0.3rem;
+  height: 1.1rem;
+  width: 1.1rem;
 }
 
 .line {
   display: block;
-  height: 3px;
+  height: 0.5rem;
   width: 100%;
   background-color: #6c6c6c;
+  border-radius: 0.1rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .burger-menu.active .line-1 {
-  transform: translateY(0.5rem) rotate(50deg);
+  transform: translateY(0.5rem) rotate(49deg);
 }
 
 .burger-menu.active .line-2 {
@@ -33,9 +33,8 @@
 }
 
 .burger-menu.active .line-3 {
-  transform: translateY(-0.5rem) rotate(-50deg);
+  transform: translateY(-0.5rem) rotate(-49deg);
 }
-
 
 menu {
   display: none;
@@ -50,4 +49,11 @@ menu li{
   list-style: none;
   padding: 0.4rem;
   border-bottom: 1px solid #6c6c6c;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
