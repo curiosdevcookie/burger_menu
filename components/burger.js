@@ -1,7 +1,9 @@
 class burgerMenu extends HTMLElement {
   connectedCallback() {
 
-    const shadowRoot = this.attachShadow({ mode: 'open' });
+    const shadowRoot = this.attachShadow({
+      mode: 'open'
+    });
 
     shadowRoot.innerHTML = `
 
@@ -21,6 +23,7 @@ class burgerMenu extends HTMLElement {
         height: 3px;
         width: 100%;
         background-color: #6c6c6c;
+        border-radius: 0.1rem;
         transition: transform 0.3s ease-in-out;
       }
 
@@ -43,13 +46,20 @@ class burgerMenu extends HTMLElement {
       .burger-menu.active .line-3 {
         transform: translateY(-0.5rem) rotate(-50deg);
       }
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
     </style>
 
-    <div class="burger-menu">
+    <button class="burger-menu">
       <span class="line line-1"></span>
       <span class="line line-2"></span>
       <span class="line line-3"></span>
-    </div>
+    </button>
 
 `
     this.onclick = function () {

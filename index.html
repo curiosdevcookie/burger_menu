@@ -10,23 +10,29 @@
   <script src='components/burger_with_dropdown.js'></script>
 </head>
 <body>
-  <h2>Burger Component</h2>
-  <burger-menu></burger-menu>
+  <section>
+    <h3>Burger Component</h3>
+    <burger-menu></burger-menu>
+  </section>
 
-  <h2>Burger Component with Dropdown</h2>
-  <burger-with-dropdown></burger-with-dropdown>
-  
-  <h2>Burger with Dropdown regular HTML</h2>
-  <div class="burger-menu" onclick="toggleMenu()">
-    <span class="line line-1"></span>
-    <span class="line line-2"></span>
-    <span class="line line-3"></span>
-  </div>
-  <menu>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-  </menu>
+  <section>
+    <h3>Burger Component with Dropdown</h3>
+    <burger-with-dropdown></burger-with-dropdown>
+  </section>
+
+  <section>
+    <h3>Burger with Dropdown regular HTML</h3>
+    <button class="burger-menu" title="open or close menu" onclick="toggleMenu()">
+      <span class="line line-1"></span>
+      <span class="line line-2"></span>
+      <span class="line line-3"></span>
+    </button>
+    <menu>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </menu>
+  </section>
 
   
 </body>
